@@ -16,17 +16,14 @@ class QuizViewController: UIViewController {
     @IBOutlet weak var answerButton4: UIButton!
     @IBOutlet weak var judgeImageView: UIImageView!
     
-    var csvArray: [String] = []
-    var quizArray: [String] = []
-    var quizCount = 0
-    var correctCount = 0
+    private var csvArray: [String] = []
+    private var quizArray: [String] = []
+    private var quizCount = 0
+    private var correctCount = 0
     var selectLevel = 0
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        print("選択したのはレベル\(selectLevel)")
-        
         csvArray = loadCSV(fileName: "quiz\(selectLevel)")
         csvArray.shuffle()
         
@@ -47,8 +44,6 @@ class QuizViewController: UIViewController {
         answerButton3.layer.borderColor = UIColor.black.cgColor
         answerButton4.layer.borderWidth = 2
         answerButton4.layer.borderColor = UIColor.black.cgColor
-        
-        // Do any additional setup after loading the view.
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
@@ -58,14 +53,11 @@ class QuizViewController: UIViewController {
     
     @IBAction func btnAction(sender: UIButton) {
         if sender.tag == Int(quizArray[1]) {
-            print("正解")
             correctCount += 1
             judgeImageView.image = UIImage(named: "correct")
         } else {
-            print("不正解")
             judgeImageView.image = UIImage(named: "incorrect")
         }
-        print("スコア:\(correctCount)")
         judgeImageView.isHidden = false
         answerButton1.isEnabled = false
         answerButton2.isEnabled = false
@@ -83,7 +75,7 @@ class QuizViewController: UIViewController {
     
     func nextQuiz() {
         quizCount += 1
-        if quizCount < csvArray.count{
+        if quizCount < csvArray.count {
             quizArray = csvArray[quizCount].components(separatedBy: ",")
             quizNumberLabel.text = "第\(quizCount + 1)問"
             quizTextView.text = quizArray[0]
@@ -99,7 +91,7 @@ class QuizViewController: UIViewController {
     func loadCSV(fileName: String) -> [String] {
         let csvBundle = Bundle.main.path(forResource: fileName, ofType: "csv")!
         do {
-            let csvData = try String(contentsOfFile: csvBundle, encoding: String.Encoding.utf8)
+            let csvData = try String(contentsOfFile: csvBundle, encoding: .utf8)
             let lineChange = csvData.replacingOccurrences(of: "\r", with: "\n")
             csvArray = lineChange.components(separatedBy: "\n")
             csvArray.removeLast()
@@ -108,15 +100,4 @@ class QuizViewController: UIViewController {
         }
         return csvArray
     }
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
 }
