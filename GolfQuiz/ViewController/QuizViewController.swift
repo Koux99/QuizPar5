@@ -84,7 +84,9 @@ class QuizViewController: UIViewController {
             answerButton3.setTitle(quizArray[4], for: .normal)
             answerButton4.setTitle(quizArray[5], for: .normal)
         } else {
-            performSegue(withIdentifier: "toScoreVC", sender: nil)
+            let storyboard = UIStoryboard(name: "Score", bundle: nil)
+            let scoreVC = storyboard.instantiateViewController(withIdentifier: "Score") as! ScoreViewController
+            self.present(scoreVC, animated: true)
         }
     }
     

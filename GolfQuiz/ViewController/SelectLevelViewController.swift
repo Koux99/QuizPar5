@@ -12,8 +12,6 @@ class SelectLevelViewController: UIViewController {
     @IBOutlet weak var level2Button: UIButton!
     @IBOutlet weak var level3Button: UIButton!
     
-    private var selectTag = 0
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         level1Button.layer.borderWidth = 2
@@ -24,13 +22,10 @@ class SelectLevelViewController: UIViewController {
         level3Button.layer.borderColor = UIColor.black.cgColor
     }
     
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        let quizVC = segue.destination as! QuizViewController
-        quizVC.selectLevel = selectTag
-    }
-    
     @IBAction func levelButtonAction(sender: UIButton) {
-        selectTag = sender.tag
-        performSegue(withIdentifier: "toQuizVC", sender: nil)
+        let storyboard = UIStoryboard(name: "Quiz", bundle: nil)
+        let quizVC = storyboard.instantiateViewController(withIdentifier: "Quiz") as! QuizViewController
+        quizVC.selectLevel = sender.tag
+        self.present(quizVC, animated: true)
     }
 }

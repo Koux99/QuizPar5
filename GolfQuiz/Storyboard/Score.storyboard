@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Score View Controller-->
+        <scene sceneID="ZHs-g6-fV9">
+            <objects>
+                <viewController storyboardIdentifier="Score" modalPresentationStyle="fullScreen" useStoryboardIdentifierAsRestorationIdentifier="YES" id="CSP-e8-2in" customClass="ScoreViewController" customModule="GolfQuiz" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="vOi-Y8-8cX">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="md2-hL-SXB">
+                                <rect key="frame" x="149" y="70" width="77" height="36"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="30"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="muf-Pj-r8W">
+                                <rect key="frame" x="20" y="303.5" width="335" height="60"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="RU6-cn-W4q"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <state key="normal" title="トップに戻る">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="toTopButtonAction:" destination="CSP-e8-2in" eventType="touchUpInside" id="My1-qj-4XA"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TNt-5E-saY">
+                                <rect key="frame" x="20" y="193.5" width="335" height="60"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="06w-qI-lLP"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <state key="normal" title="結果をシェアする">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="shareButtonAction:" destination="CSP-e8-2in" eventType="touchUpInside" id="GJF-mz-WG9"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="OEh-h2-2p3"/>
+                        <color key="backgroundColor" red="0.47678160469999997" green="0.89000000000000001" blue="0.73515539429999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="TNt-5E-saY" firstAttribute="leading" secondItem="OEh-h2-2p3" secondAttribute="leading" constant="20" id="Wo9-j9-J01"/>
+                            <constraint firstItem="muf-Pj-r8W" firstAttribute="leading" secondItem="OEh-h2-2p3" secondAttribute="leading" constant="20" id="dYJ-FO-Zjp"/>
+                            <constraint firstItem="OEh-h2-2p3" firstAttribute="trailing" secondItem="TNt-5E-saY" secondAttribute="trailing" constant="20" id="eGh-rG-eWH"/>
+                            <constraint firstItem="OEh-h2-2p3" firstAttribute="trailing" secondItem="muf-Pj-r8W" secondAttribute="trailing" constant="20" id="hwq-jo-WRW"/>
+                            <constraint firstItem="muf-Pj-r8W" firstAttribute="centerY" secondItem="vOi-Y8-8cX" secondAttribute="centerY" id="jNc-g4-nht"/>
+                            <constraint firstItem="md2-hL-SXB" firstAttribute="centerX" secondItem="vOi-Y8-8cX" secondAttribute="centerX" id="pR9-Qx-lKq"/>
+                            <constraint firstItem="md2-hL-SXB" firstAttribute="top" secondItem="OEh-h2-2p3" secondAttribute="top" constant="70" id="s0a-bP-6xN"/>
+                            <constraint firstItem="muf-Pj-r8W" firstAttribute="top" secondItem="TNt-5E-saY" secondAttribute="bottom" constant="50" id="yaE-ZD-5xM"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="returnTopButton" destination="muf-Pj-r8W" id="Utc-5E-G17"/>
+                        <outlet property="scoreLabel" destination="md2-hL-SXB" id="uOW-a7-lx5"/>
+                        <outlet property="shareButton" destination="TNt-5E-saY" id="8mP-U1-4o8"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="vs3-Eo-o7A" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="875" y="62"/>
+        </scene>
+    </scenes>
+</document>

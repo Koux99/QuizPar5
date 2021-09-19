@@ -15,4 +15,11 @@ class ViewController: UIViewController {
         startButton.layer.borderWidth = 2
         startButton.layer.borderColor = UIColor.black.cgColor
     }
+    
+    @IBAction func teeOffButtonAction(_ sender: Any) {
+        let storyboard = UIStoryboard(name: "SelectLevel", bundle: nil)
+        let selectLevelVC = storyboard.instantiateViewController(withIdentifier: "SelectLevel") as! SelectLevelViewController
+        self.present(selectLevelVC, animated: true)
+    }
+    
 }

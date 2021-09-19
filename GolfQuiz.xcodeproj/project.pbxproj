@@ -19,6 +19,9 @@
 		F7305B3926F5F316006544B3 /* SelectLevelViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7305B3826F5F315006544B3 /* SelectLevelViewController.swift */; };
 		F7305B3B26F5F830006544B3 /* quiz2.csv in Resources */ = {isa = PBXBuildFile; fileRef = F7305B3A26F5F830006544B3 /* quiz2.csv */; };
 		F7305B3D26F6078D006544B3 /* quiz3.csv in Resources */ = {isa = PBXBuildFile; fileRef = F7305B3C26F6078D006544B3 /* quiz3.csv */; };
+		F7305B4526F7012D006544B3 /* SelectLevel.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F7305B4426F7012D006544B3 /* SelectLevel.storyboard */; };
+		F7305B4726F701D1006544B3 /* Quiz.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F7305B4626F701D1006544B3 /* Quiz.storyboard */; };
+		F7305B4926F70226006544B3 /* Score.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F7305B4826F70226006544B3 /* Score.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +39,9 @@
 		F7305B3826F5F315006544B3 /* SelectLevelViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectLevelViewController.swift; sourceTree = "<group>"; };
 		F7305B3A26F5F830006544B3 /* quiz2.csv */ = {isa = PBXFileReference; lastKnownFileType = text; path = quiz2.csv; sourceTree = "<group>"; };
 		F7305B3C26F6078D006544B3 /* quiz3.csv */ = {isa = PBXFileReference; lastKnownFileType = text; path = quiz3.csv; sourceTree = "<group>"; };
+		F7305B4426F7012D006544B3 /* SelectLevel.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SelectLevel.storyboard; sourceTree = "<group>"; };
+		F7305B4626F701D1006544B3 /* Quiz.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Quiz.storyboard; sourceTree = "<group>"; };
+		F7305B4826F70226006544B3 /* Score.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Score.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,6 +101,9 @@
 			children = (
 				F7305B1F26F5C097006544B3 /* Main.storyboard */,
 				F7305B2426F5C099006544B3 /* LaunchScreen.storyboard */,
+				F7305B4426F7012D006544B3 /* SelectLevel.storyboard */,
+				F7305B4626F701D1006544B3 /* Quiz.storyboard */,
+				F7305B4826F70226006544B3 /* Score.storyboard */,
 			);
 			path = Storyboard;
 			sourceTree = "<group>";
@@ -167,10 +176,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				F7305B3B26F5F830006544B3 /* quiz2.csv in Resources */,
+				F7305B4926F70226006544B3 /* Score.storyboard in Resources */,
 				F7305B2626F5C099006544B3 /* LaunchScreen.storyboard in Resources */,
+				F7305B4726F701D1006544B3 /* Quiz.storyboard in Resources */,
 				F7305B2326F5C099006544B3 /* Assets.xcassets in Resources */,
 				F7305B2126F5C097006544B3 /* Main.storyboard in Resources */,
 				F7305B3226F5C48A006544B3 /* quiz1.csv in Resources */,
+				F7305B4526F7012D006544B3 /* SelectLevel.storyboard in Resources */,
 				F7305B3D26F6078D006544B3 /* quiz3.csv in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
