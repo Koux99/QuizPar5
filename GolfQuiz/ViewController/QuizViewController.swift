@@ -46,11 +46,6 @@ class QuizViewController: UIViewController {
         answerButton4.layer.borderColor = UIColor.black.cgColor
     }
     
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        let scoreVC = segue.destination as! ScoreViewController
-        scoreVC.correct = correctCount
-    }
-    
     @IBAction func btnAction(sender: UIButton) {
         if sender.tag == Int(quizArray[1]) {
             correctCount += 1
@@ -86,6 +81,7 @@ class QuizViewController: UIViewController {
         } else {
             let storyboard = UIStoryboard(name: "Score", bundle: nil)
             let scoreVC = storyboard.instantiateViewController(withIdentifier: "Score") as! ScoreViewController
+            scoreVC.correct = correctCount
             self.present(scoreVC, animated: true)
         }
     }
