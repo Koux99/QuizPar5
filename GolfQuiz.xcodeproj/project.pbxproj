@@ -74,20 +74,14 @@
 		F7305B1826F5C097006544B3 /* GolfQuiz */ = {
 			isa = PBXGroup;
 			children = (
+				F7305B4326F6FE4D006544B3 /* CSV */,
+				F7305B4226F6FE2C006544B3 /* Storyboard */,
+				F7305B4126F6FDF0006544B3 /* ViewController */,
 				F7305B1926F5C097006544B3 /* AppDelegate.swift */,
 				F7305B1B26F5C097006544B3 /* SceneDelegate.swift */,
-				F7305B1D26F5C097006544B3 /* ViewController.swift */,
-				F7305B1F26F5C097006544B3 /* Main.storyboard */,
-				F7305B3C26F6078D006544B3 /* quiz3.csv */,
-				F7305B3826F5F315006544B3 /* SelectLevelViewController.swift */,
-				F7305B3126F5C48A006544B3 /* quiz1.csv */,
-				F7305B2F26F5C281006544B3 /* ScoreViewController.swift */,
-				F7305B2D26F5C1F2006544B3 /* QuizViewController.swift */,
-				F7305B3A26F5F830006544B3 /* quiz2.csv */,
 				F7305B3E26F62DCB006544B3 /* launchImage */,
 				F7305B3326F5E76D006544B3 /* image */,
 				F7305B2226F5C099006544B3 /* Assets.xcassets */,
-				F7305B2426F5C099006544B3 /* LaunchScreen.storyboard */,
 				F7305B2726F5C099006544B3 /* Info.plist */,
 			);
 			path = GolfQuiz;
@@ -108,6 +102,36 @@
 				F7305B3F26F62DCB006544B3 /* launchImageView.png */,
 			);
 			path = launchImage;
+			sourceTree = "<group>";
+		};
+		F7305B4126F6FDF0006544B3 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				F7305B1D26F5C097006544B3 /* ViewController.swift */,
+				F7305B3826F5F315006544B3 /* SelectLevelViewController.swift */,
+				F7305B2F26F5C281006544B3 /* ScoreViewController.swift */,
+				F7305B2D26F5C1F2006544B3 /* QuizViewController.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		F7305B4226F6FE2C006544B3 /* Storyboard */ = {
+			isa = PBXGroup;
+			children = (
+				F7305B1F26F5C097006544B3 /* Main.storyboard */,
+				F7305B2426F5C099006544B3 /* LaunchScreen.storyboard */,
+			);
+			path = Storyboard;
+			sourceTree = "<group>";
+		};
+		F7305B4326F6FE4D006544B3 /* CSV */ = {
+			isa = PBXGroup;
+			children = (
+				F7305B3C26F6078D006544B3 /* quiz3.csv */,
+				F7305B3126F5C48A006544B3 /* quiz1.csv */,
+				F7305B3A26F5F830006544B3 /* quiz2.csv */,
+			);
+			path = CSV;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
