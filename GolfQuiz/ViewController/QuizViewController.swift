@@ -59,14 +59,10 @@ class QuizViewController: UIViewController {
         answerButton3.isEnabled = false
         answerButton4.isEnabled = false
         DispatchQueue.main.asyncAfter(deadline: .now() + 0.5) {
-//            self.judgeImageView.isHidden = true
-//            self.answerButton1.isEnabled = true
-//            self.answerButton2.isEnabled = true
-//            self.answerButton3.isEnabled = true
-//            self.answerButton4.isEnabled = true
-//            self.nextQuiz()
+
             let storyboard = UIStoryboard(name: "Explanation", bundle: nil)
             let explanationVC = storyboard.instantiateViewController(withIdentifier: "Explanation") as! ExplanationViewController
+            explanationVC.presentationController?.delegate = self
             explanationVC.quizArray = self.quizArray
             self.present(explanationVC, animated: true)
         }
@@ -101,5 +97,16 @@ class QuizViewController: UIViewController {
             print("エラー")
         }
         return csvArray
+    }
+}
+
+extension QuizViewController: UIAdaptivePresentationControllerDelegate {
+    func presentationControllerDidDismiss(_ presentationController: UIPresentationController) {
+        self.judgeImageView.isHidden = true
+        self.answerButton1.isEnabled = true
+        self.answerButton2.isEnabled = true
+        self.answerButton3.isEnabled = true
+        self.answerButton4.isEnabled = true
+        self.nextQuiz()
     }
 }
