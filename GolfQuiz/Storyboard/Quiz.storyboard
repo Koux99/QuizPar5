@@ -36,7 +36,7 @@
                                             <action selector="btnActionWithSender:" destination="423-Am-s0W" eventType="touchUpInside" id="JRy-FD-nUu"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="W91-zT-t8P">
+                                    <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="W91-zT-t8P">
                                         <rect key="frame" x="0.0" y="63" width="295" height="52.5"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="25"/>
@@ -47,7 +47,7 @@
                                             <action selector="btnActionWithSender:" destination="423-Am-s0W" eventType="touchUpInside" id="453-sa-7tk"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uII-pD-133">
+                                    <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uII-pD-133">
                                         <rect key="frame" x="0.0" y="125.5" width="295" height="53"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="25"/>
@@ -108,8 +108,8 @@
                     </view>
                     <connections>
                         <outlet property="answerButton1" destination="NfY-vZ-xPA" id="79r-WO-FKE"/>
-                        <outlet property="answerButton2" destination="uII-pD-133" id="QEA-fs-Ycd"/>
-                        <outlet property="answerButton3" destination="W91-zT-t8P" id="Z1H-Zj-q6u"/>
+                        <outlet property="answerButton2" destination="W91-zT-t8P" id="Zf7-zc-EWZ"/>
+                        <outlet property="answerButton3" destination="uII-pD-133" id="1Mc-Hb-OVi"/>
                         <outlet property="answerButton4" destination="CWT-iu-1lh" id="iZ6-fI-y54"/>
                         <outlet property="judgeImageView" destination="nn0-Ka-GLr" id="gIc-az-Koz"/>
                         <outlet property="quizNumberLabel" destination="ReB-tn-wuJ" id="80c-IW-qwB"/>

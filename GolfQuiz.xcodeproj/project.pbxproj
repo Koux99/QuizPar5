@@ -22,6 +22,8 @@
 		F7305B4526F7012D006544B3 /* SelectLevel.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F7305B4426F7012D006544B3 /* SelectLevel.storyboard */; };
 		F7305B4726F701D1006544B3 /* Quiz.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F7305B4626F701D1006544B3 /* Quiz.storyboard */; };
 		F7305B4926F70226006544B3 /* Score.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F7305B4826F70226006544B3 /* Score.storyboard */; };
+		F7305B4B26F71280006544B3 /* Explanation.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F7305B4A26F71280006544B3 /* Explanation.storyboard */; };
+		F7305B4D26F712DB006544B3 /* ExplanationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7305B4C26F712DB006544B3 /* ExplanationViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -42,6 +44,8 @@
 		F7305B4426F7012D006544B3 /* SelectLevel.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SelectLevel.storyboard; sourceTree = "<group>"; };
 		F7305B4626F701D1006544B3 /* Quiz.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Quiz.storyboard; sourceTree = "<group>"; };
 		F7305B4826F70226006544B3 /* Score.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Score.storyboard; sourceTree = "<group>"; };
+		F7305B4A26F71280006544B3 /* Explanation.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Explanation.storyboard; sourceTree = "<group>"; };
+		F7305B4C26F712DB006544B3 /* ExplanationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ExplanationViewController.swift; path = GolfQuiz/Storyboard/ExplanationViewController.swift; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -88,6 +92,7 @@
 		F7305B4126F6FDF0006544B3 /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
+				F7305B4C26F712DB006544B3 /* ExplanationViewController.swift */,
 				F7305B1D26F5C097006544B3 /* ViewController.swift */,
 				F7305B3826F5F315006544B3 /* SelectLevelViewController.swift */,
 				F7305B2F26F5C281006544B3 /* ScoreViewController.swift */,
@@ -104,6 +109,7 @@
 				F7305B4426F7012D006544B3 /* SelectLevel.storyboard */,
 				F7305B4626F701D1006544B3 /* Quiz.storyboard */,
 				F7305B4826F70226006544B3 /* Score.storyboard */,
+				F7305B4A26F71280006544B3 /* Explanation.storyboard */,
 			);
 			path = Storyboard;
 			sourceTree = "<group>";
@@ -181,6 +187,7 @@
 				F7305B4726F701D1006544B3 /* Quiz.storyboard in Resources */,
 				F7305B2326F5C099006544B3 /* Assets.xcassets in Resources */,
 				F7305B2126F5C097006544B3 /* Main.storyboard in Resources */,
+				F7305B4B26F71280006544B3 /* Explanation.storyboard in Resources */,
 				F7305B3226F5C48A006544B3 /* quiz1.csv in Resources */,
 				F7305B4526F7012D006544B3 /* SelectLevel.storyboard in Resources */,
 				F7305B3D26F6078D006544B3 /* quiz3.csv in Resources */,
@@ -194,6 +201,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F7305B4D26F712DB006544B3 /* ExplanationViewController.swift in Sources */,
 				F7305B1E26F5C097006544B3 /* ViewController.swift in Sources */,
 				F7305B1A26F5C097006544B3 /* AppDelegate.swift in Sources */,
 				F7305B3026F5C281006544B3 /* ScoreViewController.swift in Sources */,
