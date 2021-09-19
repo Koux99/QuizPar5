@@ -18,6 +18,10 @@ class ExplanationViewController: UIViewController {
         quizTextView.text = quizArray[0]
         answerLabel.text = "正解は\(quizArray[(Int(quizArray[1]) ?? 0) + 1])"
     }
+    
+    @IBAction func closeButtonAction(_ sender: Any) {
+        dismiss(animated: true)
+    }
 }
 
 extension ExplanationViewController {
