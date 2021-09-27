@@ -33,23 +33,37 @@ QuizPar5 (クイズパーファイブ)
 - トップページにてスタートボタンを押すことで、レベル選択画面へ遷移する
 
 ## ③レベル選択画面
+[![Image from Gyazo](https://i.gyazo.com/fcbb93492b5614251bb7a23426f17ea9.gif)](https://gyazo.com/fcbb93492b5614251bb7a23426f17ea9)
 
 - 3つのレベルのうち1つ選択する
 - 選択したレベルに応じた問題出題ページへ遷移する
 
 
 ## ④クイズ出題画面
+[![Image from Gyazo](https://i.gyazo.com/45b0f73503b2a4515bf1be373b558542.gif)](https://gyazo.com/45b0f73503b2a4515bf1be373b558542)
 
 - csvファイルを読み取って、ランダムに問題を出題する仕様となっている
 - 解答すると正解なら○、不正解ならxが問題文に重なって表示される
 - 解答すると解説画面がモーダル遷移で出てくる
 
 ## ⑤クイズ解説画面
+[![Image from Gyazo](https://i.gyazo.com/985581ec38d4ade4bd055c06a9d83119.gif)](https://gyazo.com/985581ec38d4ade4bd055c06a9d83119)
 
-- 解説画面
+- モーダル遷移で出題画面に被さるように出てくる
+- 問題文・正解・解説を表示する
+- ナビゲーションバーの「閉じる」ボタンを押すことで閉じる
+- 次の出題画面が表示される
 
 ## ⑥スコア画面
+[![Image from Gyazo](https://i.gyazo.com/1fc47e88833c5347684fb151214c6507.gif)](https://gyazo.com/1fc47e88833c5347684fb151214c6507)
 
+- 5問解き終わると正解数が表示される
+- 「トップに戻る」ボタンでトップ画面に戻る
+
+## ⑦シェア機能
+[![Image from Gyazo](https://i.gyazo.com/bede34d8bb6071a0d4087ce792a3face.png)](https://gyazo.com/bede34d8bb6071a0d4087ce792a3face)
+
+- スコア画面にて、「結果をシェアする」ボタンを押すと各種SNSにてアプリでのスコアをシェアすることができる
 
 
 # 使用技術
