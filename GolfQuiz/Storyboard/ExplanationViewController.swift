@@ -10,6 +10,7 @@ import UIKit
 class ExplanationViewController: UIViewController {
     @IBOutlet weak var quizTextView: UITextView!
     @IBOutlet weak var answerLabel: UILabel!
+    @IBOutlet weak var explanationTextView: UITextView!
     
     var quizArray: [String] = []
     
@@ -17,6 +18,7 @@ class ExplanationViewController: UIViewController {
         super.viewDidLoad()
         quizTextView.text = quizArray[0]
         answerLabel.text = "正解は\(quizArray[(Int(quizArray[1]) ?? 0) + 1])"
+        explanationTextView.text = quizArray.count == 7 ? quizArray[6] : ""
     }
     
     @IBAction func closeButtonAction(_ sender: Any) {
